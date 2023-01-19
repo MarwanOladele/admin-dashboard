@@ -1,8 +1,4 @@
 .container {
   display: flex;
-}
-
-.others {
-  flex: 4;
-  background-color:red;
+  /* margin: 10px; */
 }
