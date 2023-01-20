@@ -17,6 +17,46 @@ const WidgetSm = () => {
             <VisibilityIcon /> Display
           </button>
         </li>
+        <li className="widgetsm_listitem">
+          <img src={img} alt="user" className="widgetsm_img" />
+          <div className="widgersm_user">
+            <span className="widgersm_user">Marwan Oladele</span>
+            <span className="widgersm_title">Software Engineer</span>
+          </div>
+          <button className="widgersm_btn">
+            <VisibilityIcon /> Display
+          </button>
+        </li>
+        <li className="widgetsm_listitem">
+          <img src={img} alt="user" className="widgetsm_img" />
+          <div className="widgersm_user">
+            <span className="widgersm_user">Marwan Oladele</span>
+            <span className="widgersm_title">Software Engineer</span>
+          </div>
+          <button className="widgersm_btn">
+            <VisibilityIcon /> Display
+          </button>
+        </li>
+        <li className="widgetsm_listitem">
+          <img src={img} alt="user" className="widgetsm_img" />
+          <div className="widgersm_user">
+            <span className="widgersm_user">Marwan Oladele</span>
+            <span className="widgersm_title">Software Engineer</span>
+          </div>
+          <button className="widgersm_btn">
+            <VisibilityIcon /> Display
+          </button>
+        </li>
+        <li className="widgetsm_listitem">
+          <img src={img} alt="user" className="widgetsm_img" />
+          <div className="widgersm_user">
+            <span className="widgersm_user">Marwan Oladele</span>
+            <span className="widgersm_title">Software Engineer</span>
+          </div>
+          <button className="widgersm_btn">
+            <VisibilityIcon /> Display
+          </button>
+        </li>
       </ul>
     </div>
   );
