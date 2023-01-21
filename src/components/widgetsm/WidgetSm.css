@@ -6,3 +6,27 @@
   padding: 20px;
   margin-right: 20px;
 }
+
+.widgetsm_title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.widgetsm_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.widgetsm_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.widgetsm_listitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
