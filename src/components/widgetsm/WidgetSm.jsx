@@ -10,11 +10,41 @@ const WidgetSm = () => {
         <li className="widgetsm_listitem">
           <img src={img} alt="user" className="widgetsm_img" />
           <div className="widgersm_user">
-            <span className="widgersm_user">Marwan Oladele</span>
+            <span className="widgersm_username">Marwan Oladele</span>
             <span className="widgersm_title">Software Engineer</span>
           </div>
           <button className="widgersm_btn">
-            <VisibilityIcon /> Display
+            <VisibilityIcon className="widgetsm_icon"/> Display
+          </button>
+        </li>
+        <li className="widgetsm_listitem">
+          <img src={img} alt="user" className="widgetsm_img" />
+          <div className="widgersm_user">
+            <span className="widgersm_username">Marwan Oladele</span>
+            <span className="widgersm_title">Software Engineer</span>
+          </div>
+          <button className="widgersm_btn">
+            <VisibilityIcon className="widgetsm_icon"/> Display
+          </button>
+        </li>
+        <li className="widgetsm_listitem">
+          <img src={img} alt="user" className="widgetsm_img" />
+          <div className="widgersm_user">
+            <span className="widgersm_username">Marwan Oladele</span>
+            <span className="widgersm_title">Software Engineer</span>
+          </div>
+          <button className="widgersm_btn">
+            <VisibilityIcon className="widgetsm_icon"/> Display
+          </button>
+        </li>
+        <li className="widgetsm_listitem">
+          <img src={img} alt="user" className="widgetsm_img" />
+          <div className="widgersm_user">
+            <span className="widgersm_username">Marwan Oladele</span>
+            <span className="widgersm_title">Software Engineer</span>
+          </div>
+          <button className="widgersm_btn">
+            <VisibilityIcon className="widgetsm_icon"/> Display
           </button>
         </li>
         <li className="widgetsm_listitem">
@@ -24,37 +54,7 @@ const WidgetSm = () => {
             <span className="widgersm_title">Software Engineer</span>
           </div>
           <button className="widgersm_btn">
-            <VisibilityIcon /> Display
-          </button>
-        </li>
-        <li className="widgetsm_listitem">
-          <img src={img} alt="user" className="widgetsm_img" />
-          <div className="widgersm_user">
-            <span className="widgersm_user">Marwan Oladele</span>
-            <span className="widgersm_title">Software Engineer</span>
-          </div>
-          <button className="widgersm_btn">
-            <VisibilityIcon /> Display
-          </button>
-        </li>
-        <li className="widgetsm_listitem">
-          <img src={img} alt="user" className="widgetsm_img" />
-          <div className="widgersm_user">
-            <span className="widgersm_user">Marwan Oladele</span>
-            <span className="widgersm_title">Software Engineer</span>
-          </div>
-          <button className="widgersm_btn">
-            <VisibilityIcon /> Display
-          </button>
-        </li>
-        <li className="widgetsm_listitem">
-          <img src={img} alt="user" className="widgetsm_img" />
-          <div className="widgersm_user">
-            <span className="widgersm_user">Marwan Oladele</span>
-            <span className="widgersm_title">Software Engineer</span>
-          </div>
-          <button className="widgersm_btn">
-            <VisibilityIcon /> Display
+            <VisibilityIcon className="widgetsm_icon"/> Display
           </button>
         </li>
       </ul>

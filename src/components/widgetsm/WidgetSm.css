@@ -1,6 +1,6 @@
 .widgetsm {
-    flex: 1;
-    box-shadow: 1px -1px 19px -3px rgba(0, 0, 0, 0.21);
+  flex: 1;
+  box-shadow: 1px -1px 19px -3px rgba(0, 0, 0, 0.21);
   -webkit-box-shadow: 1px -1px 19px -3px rgba(0, 0, 0, 0.21);
   -moz-box-shadow: 1px -1px 19px -3px rgba(0, 0, 0, 0.21);
   padding: 20px;
@@ -8,7 +8,7 @@
 }
 
 .widgetsm_title {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -29,5 +29,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  margin: 20px 0px;
+}
+
+.widgersm_user {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.widgersm_username {
+  font-weight: 600;
+}
+
+.widgersm_title {
+  font-weight: 300;
+}
+
+.widgersm_btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background-color: #eeeef7;
+  color: #555;
+  cursor: pointer;
+}
+.widgetsm_icon {
+  font-size: 16px;
+  margin-right: 5px;
 }
