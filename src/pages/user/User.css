@@ -1,0 +1,94 @@
+.user {
+  flex: 4;
+  padding: 20px;
+}
+
+.usertitle_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.useraddbutton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.usercontainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.usershow {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 1px -1px 19px -3px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 1px -1px 19px -3px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 1px -1px 19px -3px rgba(0, 0, 0, 0.21);
+  margin-right: 20px;
+}
+
+.userupdate {
+  flex: 2;
+  padding: 20px;
+  box-shadow: 1px -1px 19px -3px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: 1px -1px 19px -3px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 1px -1px 19px -3px rgba(0, 0, 0, 0.21);
+}
+
+.usershowtop {
+  display: flex;
+  align-items: center;
+}
+
+.userimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.usershowtoptitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.usershowusername {
+  font-weight: 600;
+}
+
+.usershowusertitle {
+  font-weight: 300;
+}
+
+.usershownfo {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  color: #444;
+}
+
+.usershowicon {
+  margin-right: 10px;
+}
+
+.usershowicon {
+  font-size: 16px !important;
+}
+
+.usershowbottom {
+  margin-top: 20px;
+}
+
+.usershowtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(157, 133, 133);
+}
