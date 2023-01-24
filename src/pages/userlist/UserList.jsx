@@ -1,18 +1,33 @@
 import "./UserList.css";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
-import img from "../../assets/image1.png";
+import DeleteIcon from "@mui/icons-material/DeleteOutline";
+import { userRows } from "../../data";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const UserList = () => {
-  const columns: GridColDef[] = [
-    { field: "id", headerName: "ID", width: 90 },
-    { field: "user", headerName: "User", width: 200, renderCell: (params) => {
+  const [data, setData] = useState(userRows);
+
+  const deleteData = (id) => {
+    const newData = data.filter((item) => item.id != id);
+    setData(newData);
+  };
+
+  const columns = [
+    { field: "id", headerName: "ID", width: 100 },
+    {
+      field: "user",
+      headerName: "User",
+      width: 200,
+      renderCell: (params) => {
         return (
-            <div className="userlist_user">
-                <img src={params.row.avatar} alt="img" />
-                {params.row.username}
-            </div>
-        )
-    } },
+          <div className="userlist_user">
+            <img src={params.row.avatar} alt="img" />
+            {params.row.username}
+          </div>
+        );
+      },
+    },
     {
       field: "email",
       headerName: "Email",
@@ -22,93 +37,38 @@ const UserList = () => {
     {
       field: "transaction",
       headerName: "Transaction",
-      width: 90,
-    },
-  ];
-
-  const rows = [
-    {
-      id: 1,
-      username: "Jon Snow",
-      avatar: `${img}`,
-      email: "johnsnow@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      width: 150,
     },
     {
-      id: 2,
-      username: "Jon Snow",
-      avatar: `${img}`,
-      email: "johnsnow@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 3,
-      username: "Jon Snow",
-      avatar: `${img}`,
-      email: "johnsnow@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 4,
-      username: "Jon Snow",
-      avatar: `${img}`,
-      email: "johnsnow@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 5,
-      username: "Jon Snow",
-      avatar: `${img}`,
-      email: "johnsnow@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 6,
-      username: "Jon Snow",
-      avatar: `${img}`,
-      email: "johnsnow@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 7,
-      username: "Jon Snow",
-      avatar: `${img}`,
-      email: "johnsnow@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 8,
-      username: "Jon Snow",
-      avatar: `${img}`,
-      email: "johnsnow@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 9,
-      username: "Jon Snow",
-      avatar: `${img}`,
-      email: "johnsnow@gmail.com",
-      status: "active",
-      transaction: "$120.00",
+      field: "actions",
+      headerName: "Actions",
+      width: 150,
+      renderCell: (params) => {
+        // console.log(userRows.id);
+        return (
+          <>
+            <Link to={`user/${params.row.id}`}>
+              <button className="useredit">Edit</button>
+            </Link>
+            <DeleteIcon
+              className="userdelete"
+              onClick={() => deleteData(params.row.id)}
+            />
+          </>
+        );
+      },
     },
   ];
 
   return (
     <div className="userlist">
       <DataGrid
-        rows={rows}
+        rows={data}
         columns={columns}
-        pageSize={5}
+        pageSize={12}
         rowsPerPageOptions={[5]}
         checkboxSelection
+        disableSelectionOnClick
       />
     </div>
   );
