@@ -5,6 +5,7 @@ import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import PublishIcon from "@mui/icons-material/Publish";
 
 const User = () => {
   return (
@@ -93,7 +94,14 @@ const User = () => {
               </div>
             </div>
             <div className="userUpdateRight">
-                
+              <div className="userupdateupload">
+                <img src={img} alt="img" className="userUploadImg" />
+                <label htmlFor="file">
+                  <PublishIcon style={{cursor: 'pointer'}}/>
+                </label>
+                <input type="file" id="file" style={{ display: "none" }} />
+              </div>
+              <button className="userUpdateButton">Update</button>
             </div>
           </form>
         </div>
