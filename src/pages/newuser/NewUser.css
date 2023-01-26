@@ -1,0 +1,44 @@
+.newuser {
+  flex: 4;
+}
+
+.newuser_form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newuser_item {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.newuser_item label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+}
+
+.newuser_item input {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.input_radio {
+  height: 0px !important;
+}
+
+.input_radio input {
+  /* margin-top: 15px; */
+}
+
+.input_radio label {
+  margin: 10px;
+  font-size: 18px;
+  color: #555;
+}

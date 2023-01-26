@@ -6,13 +6,16 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PublishIcon from "@mui/icons-material/Publish";
+import { Link } from "react-router-dom";
 
 const User = () => {
   return (
     <div className="user">
       <div className="usertitle_container">
         <h1 className="usertitle">Edit User</h1>
-        <button className="useraddbutton">Create</button>
+        <Link to='/newuser'>
+          <button className="useraddbutton">Create</button>
+        </Link>
       </div>
       <div className="usercontainer">
         <div className="usershow">
@@ -97,7 +100,7 @@ const User = () => {
               <div className="userupdateupload">
                 <img src={img} alt="img" className="userUploadImg" />
                 <label htmlFor="file">
-                  <PublishIcon style={{cursor: 'pointer'}}/>
+                  <PublishIcon style={{ cursor: "pointer" }} />
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
