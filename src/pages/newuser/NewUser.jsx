@@ -38,7 +38,6 @@ const NewUser = () => {
             <label for="female">Female</label>
             <input type="radio" name="gender" id="other" value="other" />
             <label for="other">Others</label>
-            
           </div>
         </div>
         <div className="newuser_item">
