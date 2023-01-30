@@ -48,6 +48,7 @@ const NewUser = () => {
           </select>
         </div>
       </form>
+      <button className="newuser_btn">Create</button>
     </div>
   );
 };

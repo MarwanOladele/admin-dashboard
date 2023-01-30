@@ -10,6 +10,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import EmailIcon from "@mui/icons-material/Email";
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -33,12 +34,16 @@ const Sidebar = () => {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">QUick Menu</h3>
           <ul className="sidebar-list ">
-            <li className="sidebar-listitem ">
-              <PersonIcon className="sidebar_icon" /> users
-            </li>
-            <li className="sidebar-listitem">
-              <InventoryIcon className="sidebar_icon" /> Products
-            </li>
+            <Link to="/users" className="link">
+              <li className="sidebar-listitem ">
+                <PersonIcon className="sidebar_icon" /> users
+              </li>
+            </Link>
+            <Link to="/products" className="link">
+              <li className="sidebar-listitem">
+                <InventoryIcon className="sidebar_icon" /> Products
+              </li>
+            </Link>
             <li className="sidebar-listitem">
               <PaidIcon className="sidebar_icon" /> Transactions
             </li>
