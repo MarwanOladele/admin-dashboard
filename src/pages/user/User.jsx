@@ -99,7 +99,7 @@ const User = () => {
             <div className="userUpdateRight">
               <div className="userupdateupload">
                 <img src={img} alt="img" className="userUploadImg" />
-                <label htmlFor="file">
+                <label for="file">
                   <PublishIcon style={{ cursor: "pointer" }} />
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
