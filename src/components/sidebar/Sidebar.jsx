@@ -19,9 +19,11 @@ const Sidebar = () => {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">Dashboard</h3>
           <ul className="sidebar-list ">
-            <li className="sidebar-listitem active">
-              <LineStyleIcon className="sidebar_icon" /> Home
-            </li>
+            <Link to='/' className="link">
+              <li className="sidebar-listitem active">
+                <LineStyleIcon className="sidebar_icon" /> Home
+              </li>
+            </Link>
             <li className="sidebar-listitem">
               <TimelineIcon className="sidebar_icon" /> Analytics
             </li>
@@ -81,6 +83,10 @@ const Sidebar = () => {
               <AssessmentIcon className="sidebar_icon" /> Report
             </li>
           </ul>
+        </div>
+        <div className="color">
+          <div className="white"></div>
+          <div className="black"></div>
         </div>
       </div>
     </div>

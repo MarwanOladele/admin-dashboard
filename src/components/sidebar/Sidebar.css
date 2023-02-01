@@ -42,3 +42,26 @@
     margin-right: 5px;
     font-size: 30px !important;
 }
+
+.color {
+  display: flex;
+}
+
+.white {
+  height: 30px;
+  width: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.black {
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px;
+}
