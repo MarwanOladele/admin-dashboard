@@ -112,7 +112,17 @@
 }
 
 .productFormRight {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.productButton {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+   background-color: darkblue;
+   color: white;
+   font-weight: 600;
+   cursor: pointer;
 }
