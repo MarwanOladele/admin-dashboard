@@ -16,7 +16,7 @@ function App() {
       <Router>
         <TopBar />
 
-        <div className="container dark">
+        <div className="container">
           <Sidebar />
           <Routes>
             <Route index element={<Home />} />
