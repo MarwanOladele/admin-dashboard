@@ -13,22 +13,22 @@ import "./dark.css";
 
 function App() {
   return (
-      <Router>
-        <TopBar />
+    <Router>
+      <TopBar />
 
-        <div className="container">
-          <Sidebar />
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="users" element={<UserList />} />
-            <Route path="users/user/:userId" element={<User />} />
-            <Route path="newuser" element={<NewUser />} />
-            <Route path="products" element={<ProductList />} />
-            <Route path="products/product/:userId" element={<Product />} />
-            <Route path="/newproduct" element={<NewProduct />} />
-          </Routes>
-        </div>
-      </Router>
+      <div className="container">
+        <Sidebar />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="users" element={<UserList />} />
+          <Route path="users/user/:userId" element={<User />} />
+          <Route path="newuser" element={<NewUser />} />
+          <Route path="products" element={<ProductList />} />
+          <Route path="products/product/:userId" element={<Product />} />
+          <Route path="/newproduct" element={<NewProduct />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
